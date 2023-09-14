@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.dreamhunterztech.media_player.Video_on_player_activity"
+    android:background="#000"
+    android:keepScreenOn="true"
+    >
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:resize_mode="fixed_width"
+        android:foregroundGravity="center"
+        android:id="@+id/aspectedratio"
+        >
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/Video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:keepScreenOn="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33ecf47e"
+            android:id="@+id/nightmodevisionlayout"
+            android:visibility="gone"
+            />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+        <include layout="@layout/media_controller"/>
+
+    <com.mingle.widget.LoadingView
+        android:id="@+id/pbarmedialoading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#8d000000"
+        app:loadingText="Loading ...."
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

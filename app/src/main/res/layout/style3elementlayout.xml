@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="20dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="#8f000000"
+    android:id="@+id/mediacard"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mediaroot"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:id="@+id/mediathumnail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:id="@+id/medianame"
+            android:layout_toRightOf="@+id/mediathumnail"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:id="@+id/medialoc"
+            android:layout_toRightOf="@+id/mediathumnail"
+            android:layout_below="@+id/medianame"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:id="@+id/mediasize"
+            android:layout_toRightOf="@+id/mediathumnail"
+            android:layout_below="@+id/medialoc"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#fff"
+            android:id="@+id/mediadate"
+            android:layout_below="@+id/medialoc"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:text="00:00"
+        android:id="@+id/mediaduration"
+        android:layout_alignBottom="@+id/layout1"
+        android:layout_margin="3dp"
+        />
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:id="@+id/toolbar"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/container"
+        />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_viewTextColor="#fff"
+        app:floatingSearch_hintTextColor="#f7efef"
+        app:floatingSearch_suggestionRightIconColor="#fff"
+        app:floatingSearch_viewSuggestionItemTextColor="#fff"
+        app:floatingSearch_actionMenuOverflowColor="#fff"
+        app:floatingSearch_clearBtnColor="#fff"
+        app:floatingSearch_searchHint="search video"
+        app:floatingSearch_searchSuggestionTextSize="15dp"
+        app:floatingSearch_leftActionColor="#fff"
+        app:floatingSearch_menuItemIconColor="#fff"
+        app:floatingSearch_dividerColor="#fff"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_backgroundColor="@color/transparent"
+        app:floatingSearch_showMoveSuggestionUp="true"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_showOverFlowMenu="true"
+        app:floatingSearch_leftActionMode="noLeftAction"
+        android:keyboardNavigationCluster="true"
+        app:floatingSearch_showMenuAction="true"
+        app:floatingSearch_menu="@menu/mainpagemenu"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       />
+
+</RelativeLayout>
